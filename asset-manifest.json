@@ -1,12 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4385cff0.css",
-    "main.js": "/static/js/main.9cb73a26.js",
-    "static/media/React-App-netflix-clone.png": "/static/media/React-App-netflix-clone.77610b2c950486dbb80f.png",
-    "static/media/Charlestown-Pizza.png": "/static/media/Charlestown-Pizza.b014158f9b26c5b5b0e9.png",
-    "static/media/Gridlinesbuilders.png": "/static/media/Gridlinesbuilders.b1ae9a07030baae69f63.png",
-    "static/media/olx-clone image.png": "/static/media/olx-clone image.887047ffbf12c447e947.png",
-    "static/media/Admin-Panel-Dashboard.png": "/static/media/Admin-Panel-Dashboard.c97506c9510babb9ec52.png",
+    "main.js": "/static/js/main.786a288c.js",
     "static/media/web-removebg-preview.png": "/static/media/web-removebg-preview.9fed7f1d0b7ca01038fd.png",
     "static/media/Web-designer-1024x821.webp": "/static/media/Web-designer-1024x821.6e57f7f5669037a83b03.webp",
     "static/media/todolist.png": "/static/media/todolist.13858f78acbb5bec224e.png",
@@ -14,10 +9,10 @@
     "static/media/bars.svg": "/static/media/bars.b264a25d796c08e0e322.svg",
     "index.html": "/index.html",
     "main.4385cff0.css.map": "/static/css/main.4385cff0.css.map",
-    "main.9cb73a26.js.map": "/static/js/main.9cb73a26.js.map"
+    "main.786a288c.js.map": "/static/js/main.786a288c.js.map"
   },
   "entrypoints": [
     "static/css/main.4385cff0.css",
-    "static/js/main.9cb73a26.js"
+    "static/js/main.786a288c.js"
   ]
 }
