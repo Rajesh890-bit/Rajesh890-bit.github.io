@@ -23,7 +23,7 @@ function Home() {
             <Text />
             <button
               onClick={() => {
-                window.open("https://github.com/rahulvijay81");
+                window.open("");
               }}
               className="socailmediabtn"
             >
@@ -31,7 +31,7 @@ function Home() {
             </button>
             <button
               onClick={() => {
-                window.open("https://www.linkedin.com/in/rahulvijay81/");
+                window.open("");
               }}
               className="socailmediabtn"
             >
@@ -39,7 +39,7 @@ function Home() {
             </button>
             <button
               onClick={() => {
-                window.open("https://twitter.com/rahulvijay8156");
+                window.open("");
               }}
               className="socailmediabtn"
             >
@@ -47,7 +47,7 @@ function Home() {
             </button>
             <button
               onClick={() => {
-                window.open("https://instagram.com/rahulvijay81");
+                window.open("");
               }}
               className="socailmediabtn"
             >
