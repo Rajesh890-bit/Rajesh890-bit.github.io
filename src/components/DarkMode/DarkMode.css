@@ -115,13 +115,13 @@ body.dark
   background: var(--white);
 }
 
-/********************** Contactos **********************/
+/********************** contact **********************/
 
-body.dark .contactos .titulo {
+body.dark .contact .titulo {
   color: var(--white);
 }
 
-body.dark .contactos .site-contacto {
+body.dark .contact .site-contacto {
   color: var(--green);
 }
 

@@ -14,7 +14,7 @@ import {
   FaGoogle,
 } from "react-icons/fa";
 const Contact = () => (
-  <section className="contactos" id="contactos">
+  <section className="contact" id="contact">
     <h2 className="heading">
       <FormattedMessage id="contact" defaultMessage="Contact" />
     </h2>

@@ -5,6 +5,7 @@ import { FormattedMessage } from "react-intl";
 function SkillSection() {
   return (
     <div
+      id="skills"
       className="columns"
       data-aos="fade-left"
       data-aos-delay="650"
@@ -16,145 +17,129 @@ function SkillSection() {
 
       <h2>Front-End</h2>
       <div className="skill">
-        <div>
+        <div class="skills-card">
           <img
             alt="HTML"
-            className="icons-skils"
+            class="skills-card-img"
+            className="skills-card-img"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
           />
-          <h5>HTML</h5>
+          <h5 class="skills-card-name">HTML</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="CSS"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
           />
-          <h5>CSS</h5>
+          <h5 class="skills-card-name">CSS</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="Js"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
           />
-          <h5>JavaScript</h5>
+          <h5 class="skills-card-name">JavaScript</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="Sass"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
           />
-          <h5>Sass</h5>
+          <h5 class="skills-card-name">Sass</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="Bootstrap"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
           />
-          <h5>Bootstrap</h5>
+          <h5 class="skills-card-name">Bootstrap</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="Tailwindcss"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
           />
-          <h5>Tailwindcss</h5>
+          <h5 class="skills-card-name">Tailwindcss</h5>
         </div>
-        {/* <div>
-          <img
-            alt="jQuery"
-            className="icons-skils"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
-          />
-          <h5>jQuery</h5>
-        </div> */}
-        <div>
+        <div class="skills-card">
           <img
             alt="React"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
           />
-          <h5>React</h5>
+          <h5 class="skills-card-name">React</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="Typescript"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
           />
-          <h5>Typescript</h5>
+          <h5 class="skills-card-name">Typescript</h5>
         </div>
       </div>
       <h2>Back-End</h2>
       <div className="skill">
-        <div>
+        <div class="skills-card">
           <img
             alt="Nodejs"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
           />
-          <h5>NodeJs</h5>
+          <h5 class="skills-card-name">NodeJs</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="express"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
           />
-          <h5>Express</h5>
+          <h5 class="skills-card-name">Express</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="mongodb"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg"
           />
-          <h5>MongodDB</h5>
+          <h5 class="skills-card-name">MongodDB</h5>
         </div>
       </div>
       <h2>
         <FormattedMessage id="tools" defaultMessage="Tools" />
       </h2>
       <div className="skill">
-        {/* <div>
-          <img
-            alt="figma"
-            className="icons-skils"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-            title="figma"
-          />
-          <h5>Figma</h5>
-        </div> */}
-        <div>
+        <div class="skills-card">
           <img
             alt="photoshop"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
             title="Photoshop"
           />
-          <h5>Photoshop</h5>
+          <h5 class="skills-card-name">Photoshop</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="Visual Studio Code"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png"
             title="Visual Studio Code"
           />
-          <h5>VS Code</h5>
+          <h5 class="skills-card-name">VS Code</h5>
         </div>
-        <div>
+        <div class="skills-card">
           <img
             alt="git"
-            className="icons-skils"
+            className="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
             title="git"
           />
-          <h5>Git</h5>
+          <h5 class="skills-card-name">Git</h5>
         </div>
       </div>
     </div>

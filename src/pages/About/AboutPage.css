@@ -194,7 +194,7 @@ section .row .col-skill h4{
     opacity: 1;
 }
 
-.icons-skils {
+.skills-card-img {
     width: 7rem;
     height: 7rem;
     margin: .5rem 3rem;
@@ -319,7 +319,7 @@ section .row .columns .skill img:hover {
         margin: 0 0.5rem;
     }
 
-    .icons-skils {
+    .skills-card-img {
         margin: 1.5rem 2rem;
     }
 
@@ -337,7 +337,7 @@ section .row .columns .skill img:hover {
     .aboutmeCard{
         display: block;
     }
-    .icons-skils {
+    .skills-card-img {
         width: 6rem;
         height: 6rem;
         margin: 1.7rem 3rem;
@@ -390,7 +390,7 @@ section .row .columns .skill img:hover {
     .aboutmeCard{
         display: block;
     }
-    .icons-skils {
+    .skills-card-img {
         margin: 1.3rem 2rem;
     }
 

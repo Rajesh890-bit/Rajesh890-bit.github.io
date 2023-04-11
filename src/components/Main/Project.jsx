@@ -8,7 +8,7 @@ import styled from "styled-components";
 import todolist1 from "../../Asset/fastDeal.png";
 import todolist2 from "../../Asset/Naukri.png";
 import todolist3 from "../../Asset/tataCliq.png";
-import todolist4 from "../../Asset/Untitled design.png";
+import todolist4 from "../../Asset/portfolio.png";
 
 import { FormattedMessage } from "react-intl";
 /* Img */
@@ -65,14 +65,29 @@ const cardsData = [
     github:
       "https://github.com/KoushikNiyogi/hard-mist-4433/tree/fw21_0929_day-5",
   },
+  {
+    imageSrc: todolist4,
+    title: "Tata Cliq",
+    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    tech_stack: [
+      { skill: "HTML.png", w: "20px" },
+      { skill: "CSS.png", w: "25px" },
+      { skill: "Chakra ui.png", w: "25px" },
+      { skill: "React.png", w: "25px" },
+      { skill: "react-router.png", w: "25px" },
+    ],
+
+    netlify: "https://fastdeal1.vercel.app/",
+
+    github:
+      "https://github.com/KoushikNiyogi/hard-mist-4433/tree/fw21_0929_day-5",
+  },
 ];
 
 const Project = () => {
   return (
-    <div className="proyectos" id="proyectos">
-      <h2 className="heading">
-        <FormattedMessage id="projects" defaultMessage="Projects" />
-      </h2>
+    <div className="projects" id="projects">
+      <h2 className="heading">Projects</h2>
 
       <div>
         <Container>
@@ -152,7 +167,7 @@ const Container = styled.div`
 const Card = styled.div`
   width: 100%;
   max-width: 600px;
-  background-color: #fff;
+  background-color: #121f41;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -182,12 +197,13 @@ const Title = styled.h3`
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: white;
 `;
 
 const Text = styled.p`
   font-size: 16px;
   line-height: 1.5;
-  color: #555;
+  color: white;
 `;
 
 // const cardsData = [  {    imageSrc: 'https://via.placeholder.com/600x400',    title: 'Card 1',    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'  },  {    imageSrc: 'https://via.placeholder.com/600x400',    title: 'Card 2',    text: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'  },  {    imageSrc: 'https://via.placeholder.com/600x400',    title: 'Card 3',    text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'  },  {    imageSrc: 'https://via.placeholder.com/600x400',    title: 'Card 4',    text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'  }];

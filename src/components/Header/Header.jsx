@@ -42,7 +42,7 @@ const Header = () => {
   };
 
   return (
-    <header className="site-header">
+    <header className="site-header" id="nav-menu">
       <div id="menu-btn" className="fas fa-bars" onClick={menuDesplegable}>
         <HamburgerIcon />{" "}
       </div>
@@ -55,19 +55,39 @@ const Header = () => {
 
       <nav className="navbar flex-colum">
         <Link to="inicio" spy={true} offset={-150} href="#inicio">
-          <FormattedMessage id="home" defaultMessage="Home" />
+          <FormattedMessage
+            id="home"
+            defaultMessage="Home"
+            class="nav-link home"
+          />
         </Link>
         <Link to="sobre-mi" spy={true} offset={-150} href="#sobre-mi">
-          <FormattedMessage id="about" defaultMessage="About me" />
+          <FormattedMessage
+            id="about"
+            defaultMessage="About me"
+            class="nav-link about"
+          />
         </Link>
         <Link to="servicios" spy={true} offset={-150} href="#servicios">
-          <FormattedMessage id="services" defaultMessage="Services" />
+          <FormattedMessage
+            id="services"
+            defaultMessage="Services"
+            class="nav-link skills"
+          />
         </Link>
-        <Link to="proyectos" spy={true} offset={-150} href="#proyectos">
-          <FormattedMessage id="projects" defaultMessage="Projects" />
+        <Link to="projects" spy={true} offset={-150} href="#projects">
+          <FormattedMessage
+            id="projects"
+            defaultMessage="Projects"
+            class="nav-link projects"
+          />
         </Link>
-        <Link to="contactos" spy={true} offset={-150} href="#contactos">
-          <FormattedMessage id="contact" defaultMessage="Contact" />
+        <Link to="contact" spy={true} offset={-150} href="#contact">
+          <FormattedMessage
+            id="contact"
+            defaultMessage="Contact"
+            class="nav-link contact"
+          />
         </Link>
         <div>
           <a
@@ -75,8 +95,10 @@ const Header = () => {
             isExternal
             href="Rajesh_Pradhan_Resume.pdf"
             download="Rajesh_Pradhan_Resume.pdf"
+            class="nav-link resume"
           >
             <ButtomGet
+              id="resume-button-1"
               resumeUrl="https://drive.google.com/file/d/1KVEDHYtMddALFwpVm_P1rS7PtZtlTT4B/view?usp=share_link"
               resumeFileName={"Rajesh_Pradhan"}
             />

@@ -8,7 +8,7 @@ import Contact from "./Contact";
 
 const Main = () => (
   <main>
-    <About />
+    <About id="about" class="about section" />
 
     <Service />
 

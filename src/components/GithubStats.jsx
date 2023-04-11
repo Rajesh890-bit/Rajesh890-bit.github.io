@@ -18,7 +18,11 @@ export const GithubStats = () => {
         backgroundColor={"white"}
         style={{ padding: "4rem", margin: "auto", borderRadius: "18px" }}
       >
-        <GitHubCalendar username="rajesh890-bit" w={"98%"}></GitHubCalendar>
+        <GitHubCalendar
+          class="react-activity-calendar"
+          username="rajesh890-bit"
+          w={"98%"}
+        ></GitHubCalendar>
       </VStack>
 
       <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>

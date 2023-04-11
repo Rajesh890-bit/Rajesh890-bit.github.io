@@ -1,11 +1,11 @@
 
-/********************** Contactos **********************/
+/********************** contact **********************/
 
-.contactos{
+.contact{
     margin-top: 3rem;
 }
 
-.contactos .titulo {
+.contact .titulo {
     font-size: 2.5rem;
     font-weight: normal;
     margin-bottom: 4rem;
@@ -14,7 +14,7 @@
 }
 
 
-.contactos .site-contacto{
+.contact .site-contacto{
     font-weight: bold;
     color: var(--black);
     font-style: normal;

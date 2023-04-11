@@ -96,6 +96,7 @@ const About = () => {
                 rel="noopener noreferrer"
                 download=""
                 className="btn-codigo buttonDownload"
+                id="resume-link-2"
               >
                 <FormattedMessage id="btn-cv" defaultMessage="Download CV" />
               </a>
