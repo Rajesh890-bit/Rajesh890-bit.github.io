@@ -1,145 +1,54 @@
+import React, { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { useEffect, useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Preloader from "../src/components/Pre";
-import Home from "./pages/Home.js";
-import About from "./pages/About";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { motion } from "framer-motion";
-import Project from "./pages/Project";
-import Contact from "./pages/Contact";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+
+/* Pages */
+import Home from "./pages/Home/HomePage";
+import About from "./pages/About/AboutPage";
+import Services from "./pages/Service/ServicesPage";
+import Project from "./pages/Project/ProjectPage";
+import ProjectApp from "./pages/Project/ProjectApp";
+import ProjectGame from "./pages/Project/ProjectGame";
+
+import RouterScrollTop from "./components/ScrollToTop/RouterScrollTop";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-  console.log(mousePosition);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-
-    window.addEventListener("mousemove", mouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
   }, []);
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-    },
-  };
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-  const scrollWidthOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
   return (
     <div className="App">
-      <motion.div className="cursor" variants={variants} animate="default" />
-      <Header />
-      <Preloader load={load} id={load ? "no-scroll" : "scroll"} />
-      {/*  */}
-      <div>
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="project">
-          <Project />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-      </div>
+      <RouterScrollTop />
+      {loading ? (
+        <div className="loading-pag">
+          <div className="loader"></div>
+        </div>
+      ) : (
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route exact path="/about" element={<About />}></Route>
+          <Route exact path="/service" element={<Services />}></Route>
+          <Route exact path="/project" element={<Project />}></Route>
+          <Route exact path="/project/app" element={<ProjectApp />} />
+          <Route exact path="/project/game" element={<ProjectGame />} />
+          <Route
+            exact
+            path="*"
+            element={
+              <h2>
+                Sorry you have came in wrong route please go to the home page
+              </h2>
+            }
+          />
+        </Routes>
+      )}
     </div>
   );
 }
 
 export default App;
-
-// import React from "react";
-// import { HashLink } from "react-router-hash-link";
-
-// const App = () => {
-//   return (
-//     <div className="App">
-//       <nav>
-//         <HashLink smooth to="/#home">
-//           About
-//         </HashLink>
-
-//         <HashLink smooth to="/#profile">
-//           Profile
-//         </HashLink>
-
-//         <HashLink smooth to="/#services">
-//           Services
-//         </HashLink>
-//       </nav>
-
-//       <section id="about">
-//         <h1> About</h1>
-
-//         <p>
-//           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, nam!
-//           Iure officia aut esse tempore accusantium explicabo? Corporis deleniti
-//           ipsa fuga quas aut neque dicta nostrum laboriosam, iusto ullam minima
-//           est porro, totam saepe. Facilis aliquid praesentium, voluptates rem
-//           quibusdam sequi numquam illo eius adipisci eaque, necessitatibus
-//           consectetur, labore vero et ipsum. Officiis, ea vero. Praesentium, et.
-//           Enim, nostrum illo.
-//         </p>
-//       </section>
-
-//       <section id="profile">
-//         <h1> Profile </h1>
-//         <p>
-//           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, nam!
-//           Iure officia aut esse tempore accusantium explicabo? Corporis deleniti
-//           ipsa fuga quas aut neque dicta nostrum laboriosam, iusto ullam minima
-//           est porro, totam saepe. Facilis aliquid praesentium, voluptates rem
-//           quibusdam sequi numquam illo eius adipisci eaque, necessitatibus
-//           consectetur, labore vero et ipsum. Officiis, ea vero. Praesentium, et.
-//           Enim, nostrum illo.
-//         </p>
-//       </section>
-
-//       <section id="services">
-//         <h1> Services </h1>
-//         <p>
-//           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, nam!
-//           Iure officia aut esse tempore accusantium explicabo? Corporis deleniti
-//           ipsa fuga quas aut neque dicta nostrum laboriosam, iusto ullam minima
-//           est porro, totam saepe. Facilis aliquid praesentium, voluptates rem
-//           quibusdam sequi numquam illo eius adipisci eaque, necessitatibus
-//           consectetur, labore vero et ipsum. Officiis, ea vero. Praesentium, et.
-//           Enim, nostrum illo.
-//         </p>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default App;
