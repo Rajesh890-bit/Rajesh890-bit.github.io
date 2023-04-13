@@ -1,21 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc3302d1.css",
-    "main.js": "/static/js/main.298d57a5.js",
-    "static/media/tataCliq.png": "/static/media/tataCliq.28d4a2e920f105891e20.png",
-    "static/media/Thumbs.db": "/static/media/Thumbs.735170b30af6b4c4247f.db",
-    "static/media/fastDeal.png": "/static/media/fastDeal.ebad7aad0d0b299e4a78.png",
-    "static/media/inicio.png": "/static/media/inicio.9e191e0f2820064e6d28.png",
-    "static/media/Untitled design.png": "/static/media/Untitled design.c666a725fc3dd672cbfd.png",
-    "static/media/Naukri.png": "/static/media/Naukri.5b28400613fda084ac37.png",
-    "static/media/Rajesh_Pradhan_Resume.pdf": "/static/media/Rajesh_Pradhan_Resume.3c068a825ecdc51dcd66.pdf",
-    "static/media/portfolio.png": "/static/media/portfolio.e3668407bcbbdde3fb8e.png",
+    "main.css": "/static/css/main.3ec31f2a.css",
+    "main.js": "/static/js/main.91a3517b.js",
     "index.html": "/index.html",
-    "main.fc3302d1.css.map": "/static/css/main.fc3302d1.css.map",
-    "main.298d57a5.js.map": "/static/js/main.298d57a5.js.map"
+    "main.3ec31f2a.css.map": "/static/css/main.3ec31f2a.css.map",
+    "main.91a3517b.js.map": "/static/js/main.91a3517b.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc3302d1.css",
-    "static/js/main.298d57a5.js"
+    "static/css/main.3ec31f2a.css",
+    "static/js/main.91a3517b.js"
   ]
 }
