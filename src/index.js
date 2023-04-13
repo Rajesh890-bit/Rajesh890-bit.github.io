@@ -1,16 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App";
-
-import { LangProvider } from "./context/Context";
-import { HashRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
+import { BrowserRouter } from "react-router-dom";
+
+import { theme } from "./Component/Theming/Breakpoints";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <HashRouter>
-    <LangProvider>
+  <BrowserRouter>
+    <ChakraProvider theme={theme}>
       <App />
-    </LangProvider>
-  </HashRouter>
+    </ChakraProvider>
+  </BrowserRouter>
 );

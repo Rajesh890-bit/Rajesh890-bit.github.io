@@ -1,53 +1,44 @@
-import React, { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
-/* Pages */
-import Home from "./pages/Home/HomePage";
-import About from "./pages/About/AboutPage";
-import Services from "./pages/Service/ServicesPage";
-import Project from "./pages/Project/ProjectPage";
-import ProjectApp from "./pages/Project/ProjectApp";
-import ProjectGame from "./pages/Project/ProjectGame";
+import { Box } from "@chakra-ui/react";
 
-import RouterScrollTop from "./components/ScrollToTop/RouterScrollTop";
+import { HStack, Text, Image } from "@chakra-ui/react";
+
+import Navbar from "./Component/Navbar";
+
+import Home from "./Component/Home";
+
+import About from "./Component/About";
+
+import Contact from "./Component/Contact";
+
+import Skills from "./Component/Skills";
+
+import Projects from "./Component/Projects";
+
+import { GithubStats } from "./Component/GithubStats";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-  }, []);
   return (
-    <div className="App">
-      <RouterScrollTop />
-      {loading ? (
-        <div className="loading-pag">
-          <div className="loader"></div>
-        </div>
-      ) : (
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route exact path="/about" element={<About />}></Route>
-          <Route exact path="/service" element={<Services />}></Route>
-          <Route exact path="/project" element={<Project />}></Route>
-          <Route exact path="/project/app" element={<ProjectApp />} />
-          <Route exact path="/project/game" element={<ProjectGame />} />
-          <Route
-            exact
-            path="*"
-            element={
-              <h2>
-                Sorry you have came in wrong route please go to the home page
-              </h2>
-            }
-          />
-        </Routes>
-      )}
-    </div>
+    <Box minW="280px" className="App" color="white" bg="rgb(1, 16, 27)">
+      <Navbar />
+
+      <Box m="auto" w={{ base: "92%", "1120px": "82%" }}>
+        <Home />
+
+        <About />
+
+        <Skills />
+
+        <Projects />
+
+        <GithubStats />
+
+        <Contact />
+      </Box>
+
+      <Image src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg"></Image>
+    </Box>
   );
 }
 
