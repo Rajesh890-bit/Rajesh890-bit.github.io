@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   return (
-    <Box mt="-90px" border="2px solid rgb(1, 16, 27)" id="home" mb="30px">
+    <Box mt="-90px" border="" id="home" mb="30px">
       {/* //mt = {{base : '20px','456px' : '25px','612px' : '30px','735px' : '40px', '934px':'100px'}} */}
 
       <HStack
@@ -34,8 +34,10 @@ const Home = () => {
         flexDirection={{ base: "column", "934px": "row" }}
         pl="25px"
         bg="blue.900"
-        backdropFilter={"blur(10px)"}
+        backdropFilter="blur(40px)"
+        backgroundColor="rgba(255, 255, 255, 0.3)"
         justify={"space-between"}
+        borderRadius={"18px"}
       >
         <Box
           mb={{ base: "50px", "934px": "none" }}
@@ -44,7 +46,12 @@ const Home = () => {
           w={{ base: "98%", "934px": "50%" }}
           textAlign={"left"}
         >
-          <Heading fontSize="50px" color="white" letterSpacing={"2px"} as="h1">
+          <Heading
+            fontSize="50px"
+            color="#0D47A1"
+            letterSpacing={"2px"}
+            as="h1"
+          >
             Hi! I Am
           </Heading>
 

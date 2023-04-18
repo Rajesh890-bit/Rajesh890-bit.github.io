@@ -20,7 +20,7 @@ import { GithubStats } from "./Component/GithubStats";
 
 function App() {
   return (
-    <Box minW="280px" className="App" color="white" bg="rgb(1, 16, 27)">
+    <Box minW="280px" className="App" color="white" bg="#42A5F5">
       <Navbar />
 
       <Box m="auto" w={{ base: "92%", "1120px": "82%" }}>

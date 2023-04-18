@@ -11,7 +11,9 @@ const Contact = () => {
         p="20px"
         py="30px"
         m="auto"
-        bg="blue.800"
+        backdropFilter="blur(10px)"
+        backgroundColor="rgba(255, 255, 255, 0.3)"
+        color="black"
         w="270px"
         justify={"space-between"}
       >

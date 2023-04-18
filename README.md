@@ -3,3 +3,5 @@
 ### --legacy-peer-deps
 
 ### npm run build
+
+git clone -b <branch> <remote_repo>

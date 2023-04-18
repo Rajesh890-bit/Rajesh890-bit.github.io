@@ -14,69 +14,41 @@ import {
 
 import style from "./Project.module.css";
 
+import todolist1 from "../Asset/fastDeal.png";
+import todolist2 from "../Asset/Naukri.png";
+import todolist3 from "../Asset/tataCliq.png";
+import todolist4 from "../Asset/shopsyfy.png";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Responsive_Projects = [
-  {
-    pc_screenshot: "Pharmony+.png",
-
-    mobile_screenshot: "pharmony+ Mobile.png",
-
-    title: "Pharmony ➕",
-
-    clone: "clone : 1mg",
-
-    description:
-      "It is an Indian healthcare and wellness platform that offers a range of online healthcare services to consumers.",
-
-    tech_stack: [
-      { skill: "HTML.png", w: "20px" },
-      { skill: "CSS.png", w: "25px" },
-      { skill: "Chakra ui.png", w: "25px" },
-      { skill: "React.png", w: "25px" },
-      { skill: "react-router.png", w: "25px" },
-    ],
-
-    netlify: "https://lustrous-fox-1c72ee.netlify.app/",
-
-    github: "https://github.com/TejasPedge/hurried-desire-339",
-  },
-
-  {
-    pc_screenshot: "Impression.png",
-
-    mobile_screenshot: "Impression Mobile.png",
-
-    title: "Impression Cosmetics💄",
-
-    clone: "clone : Nykaa",
-
-    description:
-      "It is a leading Indian e-commerce platform that specializes in beauty and wellness products.",
-
-    tech_stack: [
-      { skill: "HTML.png", w: "20px" },
-      { skill: "CSS.png", w: "25px" },
-      { skill: "Chakra ui.png", w: "25px" },
-      { skill: "React.png", w: "25px" },
-      { skill: "react-router.png", w: "25px" },
-    ],
-
-    netlify: "https://tejas-app.netlify.app/",
-
-    github: "https://github.com/TejasPedge/needless-marble-4977",
-  },
+  // {
+  //   pc_screenshot: todolist4,
+  //   mobile_screenshot: "pharmony+ Mobile.png",
+  //   title: "Pharmony ➕",
+  //   clone: "clone : 1mg",
+  //   description:
+  //     "It is an Indian healthcare and wellness platform that offers a range of online healthcare services to consumers.",
+  //   tech_stack: [
+  //     { skill: "HTML.png", w: "20px" },
+  //     { skill: "CSS.png", w: "25px" },
+  //     { skill: "Chakra ui.png", w: "25px" },
+  //     { skill: "React.png", w: "25px" },
+  //     { skill: "react-router.png", w: "25px" },
+  //   ],
+  //   netlify: "https://lustrous-fox-1c72ee.netlify.app/",
+  //   github: "https://github.com/TejasPedge/hurried-desire-339",
+  // },
 ];
 
 const non_Responsive_Projects = [
   {
-    pc_screenshot: "Master Wear.png",
+    pc_screenshot: todolist1,
 
     mobile_screenshot: null,
 
-    title: "Master Wear👗👖",
+    title: "Fast Deal👗👖",
 
-    clone: "clone : Farfetch",
+    clone: "clone : SnapDeal",
 
     description:
       "It is a global luxury fashion online marketplace that connects customers with a curated selection of products from a network of independent luxury boutiques and designer brands.",
@@ -84,27 +56,32 @@ const non_Responsive_Projects = [
     tech_stack: [
       { skill: "HTML.png", w: "20px" },
       { skill: "CSS.png", w: "25px" },
-      { skill: "Javascript.png", w: "25px" },
+      { skill: "Chakra ui.png", w: "25px" },
+      { skill: "React.png", w: "25px" },
+      { skill: "react-router.png", w: "25px" },
+      { skill: "Redux.png", w: "25px" },
+      { skill: "Redux.png", w: "25px" },
     ],
 
-    netlify: "https://chic-daifuku-d74e5f.netlify.app",
+    netlify: "https://fastdeal1.vercel.app/",
 
-    github: "https://github.com/TejasPedge/gusty-crow-4734",
+    github:
+      "https://github.com/KoushikNiyogi/hard-mist-4433/tree/fw21_0929_day-5",
 
     isOnGithub: true,
   },
 
   {
-    pc_screenshot: "Movie_Search.png",
+    pc_screenshot: todolist3,
 
     mobile_screenshot: null,
 
-    title: "Tejas Movies🎥📽️🎞️",
+    title: "Tata Cliq",
 
-    clone: "clone : ----",
+    clone: "clone : Tata Cliq",
 
     description:
-      "It is a movie website is an online platform that provides information about movies, including their trailers, reviews, cast and crew details, and screening schedules.",
+      "It is an e-commerce side which provide fashion , gadgets and Home related products online and free delivery available",
 
     tech_stack: [
       { skill: "HTML.png", w: "20px" },
@@ -112,62 +89,63 @@ const non_Responsive_Projects = [
       { skill: "Javascript.png", w: "25px" },
     ],
 
-    netlify: "https://incandescent-brioche-56779e.netlify.app/",
+    netlify: "https://lustrous-crumble-957505.netlify.app/",
 
-    github: "",
+    github: "https://github.com/Rajesh890-bit/fancy-thunder-426",
 
-    isOnGithub: false,
+    isOnGithub: true,
   },
 
-  // {
-  //   pc_screenshot: "Masai TaskList.png",
+  {
+    pc_screenshot: todolist2,
 
-  //   mobile_screenshot: null,
+    mobile_screenshot: null,
 
-  //   title: "Masai TaskList📃📃",
+    title: "Naukri📃📃",
 
-  //   clone: "clone : ----",
+    clone: "clone :Nakukri.com",
 
-  //   description:
-  //     "It is an online platform that allows users to create, manage, and track their tasks and responsibilities in a centralized location. ",
+    description:
+      "Naukri.com is a job portal that connects job seekers with employers and provides a platform for recruitment activities.",
 
-  //   tech_stack: [
-  //     { skill: "HTML.png", w: "20px" },
-  //     { skill: "CSS.png", w: "25px" },
-  //     { skill: "Javascript.png", w: "25px" },
-  //   ],
+    tech_stack: [
+      { skill: "HTML.png", w: "20px" },
+      { skill: "CSS.png", w: "25px" },
+      { skill: "Javascript.png", w: "25px" },
+    ],
 
-  //   netlify: "https://stunning-puffpuff-8ae85a.netlify.app/",
+    netlify: "https://cerulean-tarsier-3cdce4.netlify.app/",
 
-  //   github: "",
+    github:
+      "https://github.com/SakthivelMadhu/-lazy-base-8555/tree/fw21_0929_day-5",
 
-  //   isOnGithub: false,
-  // },
+    isOnGithub: true,
+  },
 
-  // {
-  //   pc_screenshot: "Admission Portal.png",
+  {
+    pc_screenshot: todolist4,
 
-  //   mobile_screenshot: null,
+    mobile_screenshot: null,
 
-  //   title: "Admission Portal 🎫",
+    title: "Shopsyfy 🎫",
 
-  //   clone: "clone : ----",
+    clone: "clone : jio Mart",
 
-  //   description:
-  //     "It is an online platform that allows Teachers to make admission Process Easy and Track Admission details, built for to educational institutions, such as colleges, universities, and schools. ",
+    description:
+      "It is an online platform that allows consumer to  buy grocery items online by free home delivery",
 
-  //   tech_stack: [
-  //     { skill: "HTML.png", w: "20px" },
-  //     { skill: "CSS.png", w: "25px" },
-  //     { skill: "Javascript.png", w: "25px" },
-  //   ],
+    tech_stack: [
+      { skill: "HTML.png", w: "20px" },
+      { skill: "CSS.png", w: "25px" },
+      { skill: "Javascript.png", w: "25px" },
+    ],
 
-  //   netlify: "https://fanciful-maamoul-86facb.netlify.app/",
+    netlify: "https://superlative-jelly-6ae2bd.netlify.app/html/",
 
-  //   github: "",
+    github: "https://github.com/Rajesh890-bit/internal-stone-3047",
 
-  //   isOnGithub: false,
-  // },
+    isOnGithub: true,
+  },
 
   // {
   //   pc_screenshot: "Employee Records.png",
@@ -197,13 +175,13 @@ const non_Responsive_Projects = [
 
 const Projects = () => {
   return (
-    <Box border={"2px solid rgb(1, 16, 27)"} pb="100px" id="projects">
+    <Box border={""} pb="100px" id="projects">
       {/* green border to below box */}
 
       <Box mt="110px">
         <Heading color="rgb(0, 255, 162);" fontSize={35}>
           {" "}
-          <Text as="span" color="white">
+          <Text as="span" color="gray">
             My
           </Text>{" "}
           Projects
@@ -218,6 +196,7 @@ const Projects = () => {
                 bg="blue.700"
                 px="10px"
                 py="25px"
+                borderRadius={"18px"}
               >
                 {/* visible on tablet,mobile screen description box */}
 
@@ -239,7 +218,7 @@ const Projects = () => {
                     m="auto"
                     display="flex"
                     flexDirection="column"
-                    w="80%"
+                    w="90%"
                     bg="blue.800"
                     borderRadius={"10px"}
                     mt="20px"
@@ -249,7 +228,11 @@ const Projects = () => {
                       Description :{" "}
                     </Text>
 
-                    <Text className="project-description" align="left">
+                    <Text
+                      className="project-description"
+                      align="left"
+                      color={"white"}
+                    >
                       {el.description}
                     </Text>
 
@@ -489,6 +472,7 @@ const Projects = () => {
                 bg="blue.700"
                 px="10px"
                 py="25px"
+                borderRadius={"18px"}
               >
                 {/* visible on tablet,mobile screen description box */}
 
@@ -512,7 +496,7 @@ const Projects = () => {
                     flexDirection="column"
                     w="80%"
                     bg="blue.800"
-                    borderRadius={"10px"}
+                    borderRadius={"18px"}
                     mt="20px"
                     p="2"
                   >
