@@ -13,7 +13,13 @@ export const GithubStats = () => {
         Calender
       </Heading>
 
-      <VStack mt="70px">
+      <VStack
+        mt="70px"
+        padding={"2.7rem"}
+        borderRadius={"18px"}
+        backdropFilter="blur(10px)"
+        backgroundColor="rgba(255, 255, 255, 0.3)"
+      >
         <GitHubCalendar
           class="react-activity-calendar"
           username="rajesh890-bit"
