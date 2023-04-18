@@ -7,7 +7,7 @@ export const GithubStats = () => {
     <Box pb="50px" style={{ textAlign: "center" }}>
       <Heading color="rgb(0, 255, 162);" fontSize={35}>
         {" "}
-        <Text as="span" color="gray">
+        <Text as="span" color="white">
           Github
         </Text>{" "}
         Calender
@@ -23,7 +23,7 @@ export const GithubStats = () => {
 
       <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
         {" "}
-        <Text as="span" color="gray">
+        <Text as="span" color="white">
           Github
         </Text>{" "}
         Stats
@@ -43,7 +43,7 @@ export const GithubStats = () => {
 
       <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
         {" "}
-        <Text as="span" color="gray">
+        <Text as="span" color="white">
           Github
         </Text>{" "}
         Streaks
@@ -61,7 +61,7 @@ export const GithubStats = () => {
 
       <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
         {" "}
-        <Text as="span" color="gray">
+        <Text as="span" color="white">
           Github
         </Text>{" "}
         Languages
@@ -78,7 +78,7 @@ export const GithubStats = () => {
 
       <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
         {" "}
-        <Text as="span" color="gray">
+        <Text as="span" color="white">
           📊 Github
         </Text>{" "}
         Trophies

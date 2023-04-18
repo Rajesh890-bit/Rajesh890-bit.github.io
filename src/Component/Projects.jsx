@@ -181,7 +181,7 @@ const Projects = () => {
       <Box mt="110px">
         <Heading color="rgb(0, 255, 162);" fontSize={35}>
           {" "}
-          <Text as="span" color="gray">
+          <Text as="span" color="white">
             My
           </Text>{" "}
           Projects

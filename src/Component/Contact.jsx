@@ -1,10 +1,16 @@
 import React from "react";
 
-import { Box, Stack, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Stack, Image, Link, Text, Heading } from "@chakra-ui/react";
 
 const Contact = () => {
   return (
     <Box h="250px" id="contact">
+      <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35} pb={"1rem"}>
+        {" "}
+        <Text as="span" color="white">
+          Contact
+        </Text>
+      </Heading>
       <Stack
         align="center"
         borderRadius="10px"
@@ -13,7 +19,7 @@ const Contact = () => {
         m="auto"
         backdropFilter="blur(10px)"
         backgroundColor="rgba(255, 255, 255, 0.3)"
-        color="black"
+        color="white"
         w="270px"
         justify={"space-between"}
       >
@@ -112,7 +118,9 @@ const Contact = () => {
 
         <Link id="contact-phone" isExternal href="tel:7735596685">
           {" "}
-          <Text>+91 7735596685</Text>
+          <Text color="#FFEB3B" fontSize={"1.5rem"}>
+            +91 7735596685
+          </Text>
         </Link>
       </Stack>
     </Box>
