@@ -15,10 +15,15 @@
     "github-calendar": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-github-calendar": "^3.4.0",
+    "react-github-calendar": "^4.0.0",
+    "react-particles": "^2.9.3",
+    "react-particles-js": "^3.6.0",
     "react-router-dom": "^6.9.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
+    "tslib": "^2.5.0",
+    "tsparticles": "^2.9.3",
+    "tsparticles-engine": "^2.9.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

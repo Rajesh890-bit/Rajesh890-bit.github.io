@@ -1,28 +1,46 @@
 import React from "react";
 
 import { Box, Stack, Image, Link, Text, Heading } from "@chakra-ui/react";
-
+import backgroundImage from "../Asset/Contectimag.jpg";
 const Contact = () => {
   return (
-    <Box h="250px" id="contact">
-      <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35} pb={"1rem"}>
-        {" "}
-        <Text as="span" color="white">
-          Contact
-        </Text>
-      </Heading>
+    <Box
+      h="600px"
+      id="contact"
+      w="100%"
+      pos="static"
+      top="0"
+      left="0"
+      mt={"10rem"}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        display: "flex",
+        justifyContent: "center",
+        borderRadius: "18px",
+      }}
+    >
       <Stack
         align="center"
         borderRadius="10px"
         p="20px"
         py="30px"
         m="auto"
-        backdropFilter="blur(10px)"
+        backdropFilter="blur(3px)"
         backgroundColor="rgba(255, 255, 255, 0.3)"
-        color="white"
+        color="black"
+        fontWeight={"bold"}
         w="270px"
         justify={"space-between"}
       >
+        <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35} pb={"1rem"}>
+          {" "}
+          <Text as="span" color="rgb(0, 255, 162)">
+            Contact
+          </Text>
+        </Heading>
         <Box display="flex">
           <Text>Linked In :</Text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link
