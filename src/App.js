@@ -17,10 +17,12 @@ import Skills from "./Component/Skills";
 import Projects from "./Component/Projects";
 
 import { GithubStats } from "./Component/GithubStats";
+import ParticleBackground from "./Component/ParticlesBg/ParticleBackground";
+import ParticleHeaderBg from "./Component/ParticlesBg/ParticlesHeader/ParticleHeaderBg";
 
 function App() {
   return (
-    <Box minW="280px" className="App" color="white" bg="#42A5F5">
+    <Box minW="280px" className="App" color="white" bg={"#64B5F6"}>
       <Navbar />
 
       <Box m="auto" w={{ base: "92%", "1120px": "82%" }}>

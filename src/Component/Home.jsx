@@ -7,7 +7,7 @@ import {
   Text,
   Image,
   Button,
-  Link,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 
 import style from "./Aboutme.module.css";
@@ -20,8 +20,19 @@ const Home = () => {
   };
 
   return (
-    <Box mt="-90px" border="" id="home" mb="30px">
-      {/* //mt = {{base : '20px','456px' : '25px','612px' : '30px','735px' : '40px', '934px':'100px'}} */}
+    <Box
+      mt="-90px"
+      border=""
+      id="home"
+      mb={{
+        base: "20px",
+        "456px": "25px",
+        "612px": "30px",
+        "735px": "40px",
+        "934px": "100px",
+      }}
+    >
+      {/* //mb = {{base : '20px','456px' : '25px','612px' : '30px','735px' : '40px', '934px':'100px'}} */}
 
       <HStack
         mt={{
@@ -86,7 +97,7 @@ const Home = () => {
             boxShadow={"1px 1px 5px"}
             color="black"
           >
-            <Link
+            <ChakraLink
               id="resume-link-2"
               _hover={{ textDecoration: "none" }}
               href="Rajesh_Pradhan_Resume.pdf"
@@ -94,11 +105,11 @@ const Home = () => {
               download="Rajesh_Pradhan_Resume.pdf"
             >
               Resume
-            </Link>
+            </ChakraLink>
           </Button>
 
           <HStack w="170px" justify={"space-between"}>
-            <Link
+            <ChakraLink
               id="contact-linkedin"
               isExternal
               href="https://www.linkedin.com/in/rajesh-pradhan-027907219/"
@@ -113,9 +124,8 @@ const Home = () => {
                 w="30px"
                 src="linkedin.png"
               ></Image>{" "}
-            </Link>
-
-            <Link
+            </ChakraLink>
+            <ChakraLink
               id="contact-github"
               isExternal
               href="https://github.com/Rajesh890-bit"
@@ -130,9 +140,8 @@ const Home = () => {
                 w="40px"
                 src="github.png"
               ></Image>{" "}
-            </Link>
-
-            <Link
+            </ChakraLink>
+            <ChakraLink
               id="contact-email"
               isExternal
               href="mailto:pradhan143rajesh@gmail.com"
@@ -147,9 +156,9 @@ const Home = () => {
                 w="35px"
                 src="gmail.png"
               ></Image>{" "}
-            </Link>
-
-            <Link
+            </ChakraLink>
+            y
+            <ChakraLink
               id="contact-phone"
               isExternal
               href="https://wa.me/+917735596685"
@@ -164,16 +173,9 @@ const Home = () => {
                 w="35px"
                 src="whatsapp.png"
               ></Image>{" "}
-            </Link>
+            </ChakraLink>
           </HStack>
         </Box>
-
-        <Image
-          className={style.Emoji}
-          display={{ base: "none", "934px": "block" }}
-          w="200px"
-          src=""
-        ></Image>
 
         <Image
           className="home-img"

@@ -13,7 +13,7 @@ const About = () => {
       pos="static"
       top="0"
       left="0"
-      mt={"10rem"}
+      // mt={"10rem"}
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

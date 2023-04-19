@@ -60,7 +60,6 @@ const non_Responsive_Projects = [
       { skill: "React.png", w: "25px" },
       { skill: "react-router.png", w: "25px" },
       { skill: "Redux.png", w: "25px" },
-      { skill: "Redux.png", w: "25px" },
     ],
 
     netlify: "https://fastdeal1.vercel.app/",
