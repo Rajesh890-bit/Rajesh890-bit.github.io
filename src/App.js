@@ -23,6 +23,7 @@ import { GithubStats } from "./Component/GithubStats";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "./Component/ScrollToTop/ScrollToTop";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 200 });
@@ -30,7 +31,7 @@ function App() {
   return (
     <Box minW="280px" className="App" color="white" bg={"#64B5F6"}>
       <Navbar />
-
+      <ScrollToTop />
       <Box m="auto" w={{ base: "92%", "1120px": "82%" }}>
         <Home />
 

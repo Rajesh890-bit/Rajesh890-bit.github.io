@@ -27,7 +27,11 @@ const ScrollToTop = () => {
   return (
     <div className="App">
       {backToTopButtom && (
-        <button className="cm-up" onClick={scrollUp}>
+        <button
+          className="cm-up"
+          onClick={scrollUp}
+          style={{ backgroundColor: "rgb(0, 255, 162)" }}
+        >
           <span className="cm-icon">
             <FaAngleUp />
           </span>
