@@ -1,8 +1,13 @@
 import { Box, Text, Image, VStack, Heading } from "@chakra-ui/react";
 
 import GitHubCalendar from "react-github-calendar";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export const GithubStats = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Box pb="50px" style={{ textAlign: "center" }}>
       <Heading color="rgb(0, 255, 162);" fontSize={35}>
@@ -14,6 +19,8 @@ export const GithubStats = () => {
       </Heading>
 
       <VStack
+        data-aos="fade-right"
+        data-aos-duration="1500"
         mt="70px"
         padding={"2.7rem"}
         borderRadius={"18px"}
@@ -35,7 +42,7 @@ export const GithubStats = () => {
         Stats
       </Heading>
 
-      <VStack mt="70px">
+      <VStack mt="70px" data-aos="fade-left" data-aos-duration="1500">
         <Image
           id="github-stats-card"
           borderRadius="20px"
@@ -55,7 +62,7 @@ export const GithubStats = () => {
         Streaks
       </Heading>
 
-      <VStack mt="70px">
+      <VStack mt="70px" data-aos="fade-right" data-aos-duration="1500">
         <Image
           id="github-streak-stats"
           w={"auto"}
@@ -73,7 +80,7 @@ export const GithubStats = () => {
         Languages
       </Heading>
 
-      <VStack mt="70px">
+      <VStack mt="70px" data-aos="fade-left" data-aos-duration="1500">
         <Image
           id="github-top-langs"
           w={"auto"}
@@ -90,7 +97,7 @@ export const GithubStats = () => {
         Trophies
       </Heading>
 
-      <VStack mt="70px">
+      <VStack mt="70px" data-aos="fade-right" data-aos-duration="1500">
         <div align="center">
           <p align="center">
             {" "}

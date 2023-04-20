@@ -17,10 +17,16 @@ import Skills from "./Component/Skills";
 import Projects from "./Component/Projects";
 
 import { GithubStats } from "./Component/GithubStats";
-import ParticleBackground from "./Component/ParticlesBg/ParticleBackground";
-import ParticleHeaderBg from "./Component/ParticlesBg/ParticlesHeader/ParticleHeaderBg";
+// import ParticleBackground from "./Component/ParticlesBg/ParticleBackground";
+// import ParticleHeaderBg from "./Component/ParticlesBg/ParticlesHeader/ParticleHeaderBg";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 200 });
+  }, []);
   return (
     <Box minW="280px" className="App" color="white" bg={"#64B5F6"}>
       <Navbar />

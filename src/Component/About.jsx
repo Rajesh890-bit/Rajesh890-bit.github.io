@@ -4,9 +4,17 @@ import { Box, Text, Heading } from "@chakra-ui/react";
 
 import style from "./Aboutme.module.css";
 import backgroundImage from "../Asset/Compimg11.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 200 });
+  }, []);
   return (
     <Box
+      data-aos="fade-left"
+      data-aos-duration="1500"
       border=""
       w="100%"
       h="100vh"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   Box,
@@ -11,16 +11,21 @@ import {
 } from "@chakra-ui/react";
 
 import style from "./Aboutme.module.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
   const OpenPDF = () => {
     const url = `https://drive.google.com/file/d/1KVEDHYtMddALFwpVm_P1rS7PtZtlTT4B/view?usp=share_link`;
 
     window.open(url, "_blank");
   };
-
+  useEffect(() => {
+    AOS.init({ duration: 200 });
+  }, []);
   return (
     <Box
+      data-aos="zoom-out"
+      data-aos-duration="1500"
       mt="-90px"
       border=""
       id="home"

@@ -19,7 +19,9 @@ import todolist2 from "../Asset/Naukri.png";
 import todolist3 from "../Asset/tataCliq.png";
 import todolist4 from "../Asset/shopsyfy.png";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Responsive_Projects = [
   // {
   //   pc_screenshot: todolist4,
@@ -173,6 +175,9 @@ const non_Responsive_Projects = [
 ];
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Box border={""} pb="100px" id="projects">
       {/* green border to below box */}
@@ -196,6 +201,8 @@ const Projects = () => {
                 px="10px"
                 py="25px"
                 borderRadius={"18px"}
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
               >
                 {/* visible on tablet,mobile screen description box */}
 
@@ -472,6 +479,8 @@ const Projects = () => {
                 px="10px"
                 py="25px"
                 borderRadius={"18px"}
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
               >
                 {/* visible on tablet,mobile screen description box */}
 

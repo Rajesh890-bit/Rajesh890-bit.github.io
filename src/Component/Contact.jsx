@@ -2,7 +2,13 @@ import React from "react";
 
 import { Box, Stack, Image, Link, Text, Heading } from "@chakra-ui/react";
 import backgroundImage from "../Asset/Contectimag.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Box
       h="600px"
@@ -23,12 +29,14 @@ const Contact = () => {
       }}
     >
       <Stack
+        data-aos="fade-up"
+        data-aos-duration="1500"
         align="center"
         borderRadius="10px"
         p="20px"
         py="30px"
         m="auto"
-        backdropFilter="blur(3px)"
+        backdropFilter="blur(15px)"
         backgroundColor="rgba(255, 255, 255, 0.3)"
         color="black"
         fontWeight={"bold"}

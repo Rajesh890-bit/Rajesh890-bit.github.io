@@ -10,7 +10,9 @@ import {
 } from "@chakra-ui/react";
 
 import style from "./skills.module.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Tech_Stack1 = [
   { img: "HTML.png", text: "HTML 5", w: "70px", w2: "40px" },
 
@@ -57,6 +59,10 @@ const Tech_Stack3 = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 200 });
+  }, []);
+
   return (
     <Box border="" id="skills">
       <Heading mt="90px" color="rgb(0, 255, 162);" fontSize={35}>
@@ -77,6 +83,8 @@ const Skills = () => {
         {Tech_Stack1.map((el, i) => {
           return (
             <GridItem
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
               key={Math.random()}
               className="skills-card"
               border="1px solid rgb(0, 255, 191)"
@@ -114,6 +122,8 @@ const Skills = () => {
           return (
             <GridItem
               key={Math.random()}
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
               className="skills-card"
               border="1px solid rgb(0, 255, 191)"
               borderRadius={"10px"}
@@ -152,6 +162,8 @@ const Skills = () => {
           return (
             <GridItem
               key={Math.random()}
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
               className="skills-card"
               border="1px solid rgb(0, 255, 191)"
               borderRadius={"10px"}
