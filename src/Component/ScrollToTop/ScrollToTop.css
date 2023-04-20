@@ -9,6 +9,7 @@
   right: 30px;
   cursor: pointer;
   z-index: 100;
+  background-color: rgb(6, 246, 50);
 }
 
 .cm-icon {

@@ -87,7 +87,7 @@ const Skills = () => {
               data-aos-duration="1500"
               key={Math.random()}
               className="skills-card"
-              border="1px solid rgb(0, 255, 191)"
+              border="1px solid rgb(6, 246, 50)"
               borderRadius={"10px"}
               bg="rgb(10, 29, 44)"
             >
@@ -125,7 +125,7 @@ const Skills = () => {
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               className="skills-card"
-              border="1px solid rgb(0, 255, 191)"
+              border="1px solid rgb(6, 246, 50)"
               borderRadius={"10px"}
               bg="rgb(10, 29, 44)"
             >
@@ -165,7 +165,7 @@ const Skills = () => {
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               className="skills-card"
-              border="1px solid rgb(0, 255, 191)"
+              border="1px solid rgb(6, 246, 50)"
               borderRadius={"10px"}
               bg="rgb(10, 29, 44)"
             >

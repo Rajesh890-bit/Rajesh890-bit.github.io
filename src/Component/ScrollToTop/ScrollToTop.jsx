@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 // import { BsFillArrowUpCircleFill } from "react-icons/all-files/fa/BsFillArrowUpCircleFill";
 import { FaAngleUp } from "react-icons/fa";
 import "./ScrollToTop.css";
-
+import { Tooltip } from "@chakra-ui/react";
 const ScrollToTop = () => {
   const [backToTopButtom, setBackTopButton] = useState(false);
 
@@ -27,15 +27,13 @@ const ScrollToTop = () => {
   return (
     <div className="App">
       {backToTopButtom && (
-        <button
-          className="cm-up"
-          onClick={scrollUp}
-          style={{ backgroundColor: "rgb(0, 255, 162)" }}
-        >
-          <span className="cm-icon">
-            <FaAngleUp />
-          </span>
-        </button>
+        <Tooltip hasArrow label="Click here to redirect Top" bg="black">
+          <button className="cm-up" onClick={scrollUp}>
+            <span className="cm-icon">
+              <FaAngleUp />
+            </span>
+          </button>
+        </Tooltip>
       )}
     </div>
   );
