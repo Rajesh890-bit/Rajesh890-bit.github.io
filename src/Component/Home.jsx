@@ -12,18 +12,21 @@ import {
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TextAnimationOnHover from "./TextAnimationOnHover";
 const Home = () => {
   const OpenPDF = () => {
     const url = `https://drive.google.com/file/d/1KVEDHYtMddALFwpVm_P1rS7PtZtlTT4B/view?usp=share_link`;
 
     window.open(url, "_blank");
   };
+
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 200 });
   }, []);
+
   return (
     <Box
-      data-aos="zoom-out"
+      data-aos="zoom-in-up"
       data-aos-duration="1500"
       mt="-90px"
       border=""
@@ -67,7 +70,9 @@ const Home = () => {
             data-aos="fade-up"
             duration="1500"
           >
-            Hi! I Am
+            <TextAnimationOnHover text={"Hi!"} />{" "}
+            <TextAnimationOnHover text={"I"} />{" "}
+            <TextAnimationOnHover text={"Am"} />{" "}
           </Heading>
 
           <Heading
@@ -80,7 +85,8 @@ const Home = () => {
             data-aos="fade-up"
             duration="1500"
           >
-            Rajesh Pradhan
+            <TextAnimationOnHover text={"Rajesh"} />{" "}
+            <TextAnimationOnHover text={"Pradhan"} />
           </Heading>
 
           <Text
@@ -104,7 +110,7 @@ const Home = () => {
             className="nav-link resume"
             size={["sm", "md"]}
             variant="none"
-            bg="rgb(0, 255, 162);"
+            bg="rgb(6, 246, 50);"
             border="1px solid"
             boxShadow={"1px 1px 5px"}
             color="black"

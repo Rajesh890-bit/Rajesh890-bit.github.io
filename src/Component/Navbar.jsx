@@ -112,9 +112,9 @@ const Navbar = () => {
                   onClick={(e) => Active_Link(e, i)}
                   _hover={{
                     cursor: "pointer",
-                    color: "rgb(0, 255, 162)",
+                    color: "rgb(6, 246, 50)",
                     borderBottom: "2px solid",
-                    borderColor: "rgb(0, 255, 162)",
+                    borderColor: "rgb(6, 246, 50)",
                   }}
                   px="2"
                   py="1"
@@ -134,7 +134,7 @@ const Navbar = () => {
           className="nav-link resume"
           size={["sm", "md"]}
           variant="none"
-          bg="rgb(0, 255, 162);"
+          bg="rgb(6, 246, 50);"
           border="1px solid"
           boxShadow={"1px 1px 5px"}
           color="black"

@@ -5,6 +5,7 @@ import backgroundImage from "../Asset/Contectimag.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import TextAnimationOnHover from "./TextAnimationOnHover";
 const Contact = () => {
   useEffect(() => {
     AOS.init();
@@ -43,10 +44,10 @@ const Contact = () => {
         w="270px"
         justify={"space-between"}
       >
-        <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35} pb={"1rem"}>
+        <Heading mt="50px" color="rgb(6, 246, 50);" fontSize={35} pb={"1rem"}>
           {" "}
-          <Text as="span" color="rgb(0, 255, 162)">
-            Contact
+          <Text as="span" color="rgb(6, 246, 50)">
+            <TextAnimationOnHover text="Contact" />
           </Text>
         </Heading>
         <Box display="flex">
@@ -144,8 +145,8 @@ const Contact = () => {
 
         <Link id="contact-phone" isExternal href="tel:7735596685">
           {" "}
-          <Text color="#FFEB3B" fontSize={"1.5rem"}>
-            +91 7735596685
+          <Text mt="20px" color="rgb(6, 246, 50);" fontSize={25}>
+            <TextAnimationOnHover text={"7735596685"} />
           </Text>
         </Link>
       </Stack>

@@ -7,6 +7,7 @@ import backgroundImage from "../Asset/Compimg11.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import TextAnimationOnHover from "./TextAnimationOnHover";
 const About = () => {
   useEffect(() => {
     AOS.init({ duration: 200 });
@@ -36,11 +37,12 @@ const About = () => {
       mb="40px"
     >
       <Box>
-        <Heading mt="150px" color="rgb(0, 255, 162);" fontSize={35}>
-          <Text as="span" color="white">
+        <Heading mt="150px" color="rgb(6, 246, 50)" fontSize={35}>
+          {/* <Text as="span" color="white">
             About
-          </Text>{" "}
-          Me
+          </Text>{" "} */}
+          <TextAnimationOnHover text={"About "} />{" "}
+          <TextAnimationOnHover text={"Me"} />
         </Heading>
         <Text mt="50px" fontSize={"20"}>
           Hello 👋 Myself Rajesh

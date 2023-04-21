@@ -10,7 +10,7 @@
 
     color : rgb(10, 29, 44);
 
-    color : rgb(0, 255, 162);
+    color : rgb(6, 246, 50);
     
     color :rgb(6, 246, 50);
 
@@ -25,11 +25,11 @@
 
 .active {
 
-   color : rgb(0, 255, 162);
+   color : rgb(6, 246, 50);
 
    border-bottom: 2px solid;
 
-   border-color: rgb(0, 255, 162);
+   border-color: rgb(6, 246, 50);
 
 }
 

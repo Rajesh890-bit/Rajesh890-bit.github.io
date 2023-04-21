@@ -13,6 +13,7 @@ import style from "./skills.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import TextAnimationOnHover from "./TextAnimationOnHover";
 const Tech_Stack1 = [
   { img: "HTML.png", text: "HTML 5", w: "70px", w2: "40px" },
 
@@ -65,15 +66,15 @@ const Skills = () => {
 
   return (
     <Box border="" id="skills">
-      <Heading mt="90px" color="rgb(0, 255, 162);" fontSize={35}>
+      <Heading mt="90px" color="rgb(6, 246, 50);" fontSize={35}>
         <Text as="span" color="white">
-          My
+          <TextAnimationOnHover text={"My"} />
         </Text>{" "}
-        Skills
+        <TextAnimationOnHover text={"Skills"} />
       </Heading>
 
-      <Heading mt="90px" color="rgb(0, 255, 162);" fontSize={35}>
-        Frontend
+      <Heading mt="90px" color="rgb(6, 246, 50);" fontSize={35}>
+        <TextAnimationOnHover text={"Frontend"} />
       </Heading>
       <SimpleGrid
         columns={{ base: "2", "529px": "3", "848px": "4" }}
@@ -110,8 +111,8 @@ const Skills = () => {
       </SimpleGrid>
       {/* //______backend______________________________ */}
 
-      <Heading mt="90px" color="rgb(0, 255, 162);" fontSize={35}>
-        Backend
+      <Heading mt="90px" color="rgb(6, 246, 50);" fontSize={35}>
+        <TextAnimationOnHover text={"Backend"} />
       </Heading>
       <SimpleGrid
         columns={{ base: "2", "529px": "3", "848px": "4" }}
@@ -149,8 +150,8 @@ const Skills = () => {
 
       {/* Tools */}
 
-      <Heading mt="90px" color="rgb(0, 255, 162);" fontSize={35}>
-        Tools
+      <Heading mt="90px" color="rgb(6, 246, 50);" fontSize={35}>
+        <TextAnimationOnHover text={"Tools"} />
       </Heading>
 
       <SimpleGrid

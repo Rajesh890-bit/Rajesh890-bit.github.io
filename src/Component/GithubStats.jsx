@@ -4,18 +4,19 @@ import GitHubCalendar from "react-github-calendar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import TextAnimationOnHover from "./TextAnimationOnHover";
 export const GithubStats = () => {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <Box pb="50px" style={{ textAlign: "center" }}>
-      <Heading color="rgb(0, 255, 162);" fontSize={35}>
+      <Heading color="rgb(6, 246, 50);" fontSize={35}>
         {" "}
         <Text as="span" color="white">
-          Github
+          <TextAnimationOnHover text="Github" />
         </Text>{" "}
-        Calender
+        <TextAnimationOnHover text={"Calender"} />
       </Heading>
 
       <VStack
@@ -34,12 +35,12 @@ export const GithubStats = () => {
         ></GitHubCalendar>
       </VStack>
 
-      <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
+      <Heading mt="50px" color="rgb(6, 246, 50);" fontSize={35}>
         {" "}
         <Text as="span" color="white">
-          Github
+          <TextAnimationOnHover text={"Github"} />
         </Text>{" "}
-        Stats
+        <TextAnimationOnHover text={"Stats"} />
       </Heading>
 
       <VStack mt="70px" data-aos="fade-left" data-aos-duration="1500">
@@ -54,12 +55,12 @@ export const GithubStats = () => {
         ></Image>
       </VStack>
 
-      <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
+      <Heading mt="50px" color="rgb(6, 246, 50);" fontSize={35}>
         {" "}
         <Text as="span" color="white">
-          Github
+          <TextAnimationOnHover text={"Github"} />
         </Text>{" "}
-        Streaks
+        <TextAnimationOnHover text={"Streaks"} />
       </Heading>
 
       <VStack mt="70px" data-aos="fade-right" data-aos-duration="1500">
@@ -72,12 +73,12 @@ export const GithubStats = () => {
         ></Image>
       </VStack>
 
-      <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
+      <Heading mt="50px" color="rgb(6, 246, 50);" fontSize={35}>
         {" "}
         <Text as="span" color="white">
-          Github
+          <TextAnimationOnHover text={"Github"} />
         </Text>{" "}
-        Languages
+        <TextAnimationOnHover text={"Languages"} />
       </Heading>
 
       <VStack mt="70px" data-aos="fade-left" data-aos-duration="1500">
@@ -89,12 +90,12 @@ export const GithubStats = () => {
         ></Image>
       </VStack>
 
-      <Heading mt="50px" color="rgb(0, 255, 162);" fontSize={35}>
+      <Heading mt="50px" color="rgb(6, 246, 50);" fontSize={35}>
         {" "}
         <Text as="span" color="white">
-          📊 Github
+          📊 <TextAnimationOnHover text={"Github"} />
         </Text>{" "}
-        Trophies
+        <TextAnimationOnHover text={"Trophies"} />
       </Heading>
 
       <VStack mt="70px" data-aos="fade-right" data-aos-duration="1500">

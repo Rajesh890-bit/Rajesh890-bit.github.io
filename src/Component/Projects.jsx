@@ -22,6 +22,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import TextAnimationOnHover from "./TextAnimationOnHover";
 const Responsive_Projects = [
   // {
   //   pc_screenshot: todolist4,
@@ -183,12 +184,12 @@ const Projects = () => {
       {/* green border to below box */}
 
       <Box mt="110px">
-        <Heading color="rgb(0, 255, 162);" fontSize={35}>
+        <Heading color="rgb(6, 246, 50);" fontSize={35}>
           {" "}
           <Text as="span" color="white">
-            My
+            <TextAnimationOnHover text={"My"} />
           </Text>{" "}
-          Projects
+          <TextAnimationOnHover text={"Projects"} />
         </Heading>
 
         <SimpleGrid spacing="8" mt="20px" columns={1}>
