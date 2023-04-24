@@ -146,7 +146,7 @@ const Contact = () => {
         <Link id="contact-phone" isExternal href="tel:7735596685">
           {" "}
           <Text mt="20px" color="rgb(6, 246, 50);" fontSize={25}>
-            <TextAnimationOnHover text={"7735596685"} />
+            {/* <TextAnimationOnHover text={"7735596685"} /> */}
           </Text>
         </Link>
       </Stack>

@@ -27,7 +27,7 @@ const ScrollToTop = () => {
   return (
     <div className="App">
       {backToTopButtom && (
-        <Tooltip hasArrow label="Click here to redirect Top" bg="black">
+        <Tooltip hasArrow label="scroll to top" bg="black">
           <button className="cm-up" onClick={scrollUp}>
             <span className="cm-icon">
               <FaAngleUp />

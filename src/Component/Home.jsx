@@ -26,8 +26,6 @@ const Home = () => {
 
   return (
     <Box
-      data-aos="zoom-in-up"
-      data-aos-duration="1500"
       mt="-90px"
       border=""
       id="home"
@@ -91,10 +89,16 @@ const Home = () => {
 
           <Text
             mt="15px"
-            fontSize="15px"
             id="user-detail-intro"
             data-aos="fade-up"
             duration="1500"
+            fontSize={{
+              base: "1rem",
+              "456px": "1rem",
+              "612px": "1rem",
+              "735px": "1rem",
+              "934px": "1.3rem",
+            }}
           >
             A passionate Full Stack MERN Developer skilled in HTML, CSS,
             Javascript and React, with a focus on designing and building

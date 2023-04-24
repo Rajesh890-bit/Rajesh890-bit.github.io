@@ -28,6 +28,13 @@ const TextAnimationOnHover = ({ text }) => {
       _hover={{
         cursor: "pointer",
       }}
+      fontSize={{
+        base: "1.8rem",
+        "456px": "2.3rem",
+        "612px": "2.8rem",
+        "735px": "3.4rem",
+        "934px": "3.8rem",
+      }}
     >
       {text.split("").map((letter, index) => (
         <Box
