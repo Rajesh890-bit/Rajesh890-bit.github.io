@@ -30,10 +30,10 @@ const TextAnimationOnHover = ({ text }) => {
       }}
       fontSize={{
         base: "1.8rem",
-        "456px": "2.3rem",
-        "612px": "2.8rem",
-        "735px": "3.4rem",
-        "934px": "3.8rem",
+        "456px": "1.8rem",
+        "612px": "2.3rem",
+        "735px": "2.8rem",
+        "934px": "3rem",
       }}
     >
       {text.split("").map((letter, index) => (

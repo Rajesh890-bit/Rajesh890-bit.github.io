@@ -1,12 +1,10 @@
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Button,
   Stack,
   Text,
   Image,
@@ -69,6 +67,7 @@ export function NavDrawer({ isOpen, onOpen, onClose }) {
                       px="2"
                       py="1"
                       fontWeight={600}
+                      onClick={() => onClose()}
                     >
                       {el.text}
                     </Text>

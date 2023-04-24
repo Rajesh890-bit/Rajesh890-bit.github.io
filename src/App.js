@@ -24,6 +24,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./Component/ScrollToTop/ScrollToTop";
+import Footer from "./Component/Footer";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 200 });
@@ -45,8 +46,7 @@ function App() {
 
         <Contact />
       </Box>
-
-      <Image src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg"></Image>
+      <Footer />
     </Box>
   );
 }
