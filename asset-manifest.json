@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4c0deab.css",
-    "main.js": "/static/js/main.6cc8bb21.js",
+    "main.css": "/static/css/main.32c89b07.css",
+    "main.js": "/static/js/main.6e82e6a8.js",
+    "static/media/dailyObjpc_ss.png": "/static/media/dailyObjpc_ss.751b05f0bff4b5be535a.png",
     "static/media/Compimg11.jpg": "/static/media/Compimg11.53156f0d2652147092ed.jpg",
     "static/media/Contectimag.jpg": "/static/media/Contectimag.1ea33daa5848a313e216.jpg",
     "static/media/tataCliq.png": "/static/media/tataCliq.28d4a2e920f105891e20.png",
-    "static/media/shopsyfy.png": "/static/media/shopsyfy.aa9900ac45cb4aee1a91.png",
     "static/media/fastDeal.png": "/static/media/fastDeal.ebad7aad0d0b299e4a78.png",
+    "static/media/Screenshot 2023-05-15mb.png": "/static/media/Screenshot 2023-05-15mb.8db359ed507dbaf3ccfc.png",
     "static/media/Naukri.png": "/static/media/Naukri.5b28400613fda084ac37.png",
     "index.html": "/index.html",
-    "main.f4c0deab.css.map": "/static/css/main.f4c0deab.css.map",
-    "main.6cc8bb21.js.map": "/static/js/main.6cc8bb21.js.map"
+    "main.32c89b07.css.map": "/static/css/main.32c89b07.css.map",
+    "main.6e82e6a8.js.map": "/static/js/main.6e82e6a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4c0deab.css",
-    "static/js/main.6cc8bb21.js"
+    "static/css/main.32c89b07.css",
+    "static/js/main.6e82e6a8.js"
   ]
 }
