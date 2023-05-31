@@ -13,34 +13,41 @@ import {
 } from "@chakra-ui/react";
 
 import style from "./Project.module.css";
+// Responsive
+import todolist01 from "../Asset/dailyObjpc_ss.png";
+import todolist02 from "../Asset/Screenshot 2023-05-15mb.png";
 
 import todolist1 from "../Asset/fastDeal.png";
 import todolist2 from "../Asset/Naukri.png";
 import todolist3 from "../Asset/tataCliq.png";
-import todolist4 from "../Asset/shopsyfy.png";
+// import todolist4 from "../Asset/shopsyfy.png";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import TextAnimationOnHover from "./TextAnimationOnHover";
 const Responsive_Projects = [
-  // {
-  //   pc_screenshot: todolist4,
-  //   mobile_screenshot: "pharmony+ Mobile.png",
-  //   title: "Pharmony ➕",
-  //   clone: "clone : 1mg",
-  //   description:
-  //     "It is an Indian healthcare and wellness platform that offers a range of online healthcare services to consumers.",
-  //   tech_stack: [
-  //     { skill: "HTML.png", w: "20px" },
-  //     { skill: "CSS.png", w: "25px" },
-  //     { skill: "Chakra ui.png", w: "25px" },
-  //     { skill: "React.png", w: "25px" },
-  //     { skill: "react-router.png", w: "25px" },
-  //   ],
-  //   netlify: "https://lustrous-fox-1c72ee.netlify.app/",
-  //   github: "https://github.com/TejasPedge/hurried-desire-339",
-  // },
+  {
+    pc_screenshot: todolist01,
+    mobile_screenshot: todolist02,
+    title: "Daily Essential ➕",
+    clone: "clone : Daily Object",
+    description:
+      "Daily essential - Clone of Daily Objects, an ecommerce platform which sells products like desks, watchbands, bags. Website is fully responsive, has end to end and admin side features",
+    tech_stack: [
+      { skill: "HTML.png", w: "20px" },
+      { skill: "CSS.png", w: "25px" },
+      { skill: "Chakra ui.png", w: "25px" },
+      { skill: "React.png", w: "25px" },
+      { skill: "react-router.png", w: "25px" },
+      { skill: "Redux.png", w: "25px" },
+      { skill: "Node js.png", w: "25px" },
+      { skill: "express-js.jpg", w: "25px" },
+      { skill: "Mongo db.png", w: "25px" },
+    ],
+    netlify: "https://daily-essential-koushikniyogi.vercel.app/",
+    github: "https://github.com/KoushikNiyogi/tough-request-5163",
+  },
 ];
 
 const non_Responsive_Projects = [
@@ -89,6 +96,9 @@ const non_Responsive_Projects = [
       { skill: "HTML.png", w: "20px" },
       { skill: "CSS.png", w: "25px" },
       { skill: "Javascript.png", w: "25px" },
+      { skill: "Chakra ui.png", w: "25px" },
+      { skill: "React.png", w: "25px" },
+      { skill: "react-router.png", w: "25px" },
     ],
 
     netlify: "https://lustrous-crumble-957505.netlify.app/",
@@ -105,7 +115,7 @@ const non_Responsive_Projects = [
 
     title: "Naukri📃📃",
 
-    clone: "clone :Nakukri.com",
+    clone: "clone :Naukri.com",
 
     description:
       "Naukri.com is a job portal that connects job seekers with employers and provides a platform for recruitment activities.",
@@ -124,30 +134,30 @@ const non_Responsive_Projects = [
     isOnGithub: true,
   },
 
-  {
-    pc_screenshot: todolist4,
+  // {
+  //   pc_screenshot: todolist4,
 
-    mobile_screenshot: null,
+  //   mobile_screenshot: null,
 
-    title: "Shopsyfy 🎫",
+  //   title: "Shopsyfy 🎫",
 
-    clone: "clone : jio Mart",
+  //   clone: "clone : jio Mart",
 
-    description:
-      "It is an online platform that allows consumer to  buy grocery items online by free home delivery",
+  //   description:
+  //     "It is an online platform that allows consumer to  buy grocery items online by free home delivery",
 
-    tech_stack: [
-      { skill: "HTML.png", w: "20px" },
-      { skill: "CSS.png", w: "25px" },
-      { skill: "Javascript.png", w: "25px" },
-    ],
+  //   tech_stack: [
+  //     { skill: "HTML.png", w: "20px" },
+  //     { skill: "CSS.png", w: "25px" },
+  //     { skill: "Javascript.png", w: "25px" },
+  //   ],
 
-    netlify: "https://superlative-jelly-6ae2bd.netlify.app/html/",
+  //   netlify: "https://superlative-jelly-6ae2bd.netlify.app/html/",
 
-    github: "https://github.com/Rajesh890-bit/internal-stone-3047",
+  //   github: "https://github.com/Rajesh890-bit/internal-stone-3047",
 
-    isOnGithub: true,
-  },
+  //   isOnGithub: true,
+  // },
 
   // {
   //   pc_screenshot: "Employee Records.png",

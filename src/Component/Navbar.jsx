@@ -49,7 +49,7 @@ const Navbar = () => {
   };
 
   const OpenPDF = () => {
-    const url = `https://drive.google.com/file/d/1KVEDHYtMddALFwpVm_P1rS7PtZtlTT4B/view?usp=share_link`;
+    const url = `https://drive.google.com/file/d/1Ff_i57gT1gl9Wk9WU5XPAtsWByDCQp2n/view?usp=drive_link`;
 
     window.open(url, "_blank");
   };
@@ -142,8 +142,8 @@ const Navbar = () => {
           <ChakraLink
             id="resume-link-1"
             isExternal
-            href="Rajesh_Pradhan_Resume.pdf"
-            download="Rajesh_Pradhan_Resume.pdf"
+            href="Rajesh-Pradhan-Resume.pdf"
+            download="Rajesh-Pradhan-Resume.pdf"
             _hover={{ textDecoration: "none" }}
           >
             Resume
