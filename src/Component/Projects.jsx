@@ -72,7 +72,7 @@ const non_Responsive_Projects = [
       { skill: "Redux.png", w: "25px" },
     ],
 
-    netlify: "https://fastdeal1.vercel.app/",
+    netlify: "https://fastdeal.vercel.app/",
 
     github:
       "https://github.com/KoushikNiyogi/hard-mist-4433/tree/fw21_0929_day-5",
